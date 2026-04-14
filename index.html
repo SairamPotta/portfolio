@@ -4,22 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sairam Portfolio</title>
+    <meta
+      name="description"
+      content="Associate Technical Lead with 8+ years in Angular 20, NestJS v11, MEAN Stack, Azure cloud deployments and CI/CD pipelines. Based in Chennai, India."
+    />
+    <meta property="og:title" content="Sairam Potta | Associate Technical Lead" />
+    <meta
+      property="og:description"
+      content="Full-stack developer specialising in Angular 20, NestJS v11, Azure, Docker and Kubernetes."
+    />
+    <title>Sairam Potta | Associate Technical Lead | Angular 20 & NestJS</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+
+    <!-- DESKTOP NAV -->
     <nav id="desktop-nav">
       <div class="logo">Sairam Potta</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+
+    <!-- HAMBURGER NAV -->
     <nav id="hamburger-nav">
       <div class="logo">Sairam Potta</div>
       <div class="hamburger-menu">
@@ -30,25 +42,26 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#work" onclick="toggleMenu()">Work</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
     <section id="profile">
-      <div class="section__pic-container">
+      <div class="section__pic-container reveal">
         <img src="./assets/profile-pic.png" alt="Sairam Potta profile picture" />
       </div>
-      <div class="section__text">
+      <div class="section__text reveal">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Sairam Potta</h1>
-        <p class="section__text__p2">MEAN Stack Developer</p>
+        <h1 class="gradient-text">Kumara Naga Venkata Sairam Potta</h1>
+        <p class="section__text__p2">Associate Technical Lead <span class="hero-company">@ Applied Materials</span></p>
+        <p class="section__text__p3">Angular 20 &nbsp;·&nbsp; NestJS v11 &nbsp;·&nbsp; Azure &nbsp;·&nbsp; MEAN Stack</p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume.pdf')"
-          >
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
             Download CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -58,384 +71,436 @@
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
+            alt="LinkedIn"
             class="icon"
             onclick="location.href='https://www.linkedin.com/in/kumara-naga-venkata-sairam-potta-b753621b0'"
           />
           <img
             src="./assets/github.png"
-            alt="My Github profile"
+            alt="GitHub"
             class="icon"
             onclick="location.href='https://github.com/SairamPotta'"
           />
         </div>
       </div>
     </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
+      <div class="reveal" style="text-align:center">
+        <p class="section-label">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="title-underline"></div>
+      </div>
+      <div class="section-container reveal">
+        <img
+          src="./assets/about-pic.png"
+          alt="Sairam Potta"
+          class="about-pic"
+        />
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/experience.png" alt="Experience" class="icon" />
               <h3>Experience</h3>
-              <p>6+ years <br />Mean Stack Developer</p>
+              <p>8+ Years<br />Associate Technical Lead</p>
             </div>
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
+              <img src="./assets/education.png" alt="Education" class="icon" />
               <h3>Education</h3>
-              <p>M.Tech. Masters Degree<br />B.Tech Bachelors Degree</p>
+              <p>M.Tech — Masters Degree<br />B.Tech — Bachelors Degree</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Hi, 👋 I am Kumara Naga Venkata Sairam Potta, I am interested in doing web applications Started career as a Web Developer them moved as a MEAN stack Developer. Having Good exposure on the web technologies like Angular with HTML5, CSS, JavaScript and TypeScript. Here some of the responsibilities working as a MEAN stack Developer
-              <ul>
-                <li>
-                  Developing, testing, and deploying fast and scalable web applications.
-                </li>
-                <li>
-                  Creating secure RESTful APIs and integrating them with front-end elements.
-                </li>
-                <li>
-                  Collaborating with cross-functional teams to design, develop, and ship new features.
-                </li>
-                <li>
-                  Ensuring high performance and responsiveness of applications.
-                </li>
-                <li>
-                  Staying up-to-date with emerging trends and technologies in software development.
-                </li>
-
-              </ul>
+              I am Kumara Naga Venkata Sairam Potta, an Associate Technical Lead
+              at Applied Materials with 8+ years of experience building
+              enterprise-grade web applications for the semiconductor industry.
+              I specialise in Angular 20, NestJS v11 and MongoDB (MEAN stack),
+              with hands-on experience in Azure cloud deployments using Docker,
+              Kubernetes and Helm.
             </p>
+            <ul>
+              <li>Leading full-stack architecture for Angular 20 + NestJS applications</li>
+              <li>Deploying containerised workloads on Azure using Docker, Kubernetes and Helm</li>
+              <li>Building and maintaining Jenkins CI/CD pipelines</li>
+              <li>Maintaining &gt;95% unit test code coverage using Jest</li>
+              <li>Mentoring and managing a team of 4 developers</li>
+              <li>Applying OWASP Top 10 security practices across all projects</li>
+              <li>Practising Agile/Scrum — sprint planning, daily stand-ups, retrospectives and 2-week delivery cycles</li>
+            </ul>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML 5</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS 3</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Mongo DB</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frameworks</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Angular</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Nestjs</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SCSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Used Tools</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Jest</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Vs Code</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Docker</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>K18</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <br>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Standards Check"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Standards Check</h2>
 
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Analytics"
-                class="project-img"
-              />
+    <!-- ==================== WORK EXPERIENCE SECTION ==================== -->
+    <section id="work">
+      <div class="reveal" style="text-align:center">
+        <p class="section-label">My Career</p>
+        <h1 class="title">Work Experience</h1>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="timeline reveal">
+
+        <!-- ---- Applied Materials ---- -->
+        <div class="timeline-company">
+          <div class="timeline-company__header">
+            <div class="timeline-company__dot"></div>
+            <div class="timeline-company__info">
+              <h2 class="timeline-company__name">Applied Materials</h2>
+              <span class="timeline-company__duration">
+                Oct 2020 – Present &nbsp;·&nbsp;
+                <span class="calc-duration" data-start="2020-10"></span>
+              </span>
             </div>
-            <h2 class="experience-sub-title project-title">Analytics</h2>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Patient Diagnostic"
-                class="project-img"
-              />
+
+          <!-- Role 1 -->
+          <div class="timeline-role">
+            <div class="timeline-role__header">
+              <div>
+                <h3 class="timeline-role__title">Associate Technical Lead</h3>
+                <span class="timeline-role__period">
+                  Jan 2024 – Present · <span class="calc-duration" data-start="2024-01"></span> · Chennai
+                </span>
+              </div>
+              <span class="role-badge role-badge--current">Current</span>
             </div>
-            <h2 class="experience-sub-title project-title">Patient Diagnostic</h2>
+            <ul class="timeline-role__bullets">
+              <li>Lead full-stack architecture and cloud deployment of enterprise-grade Angular 20 + NestJS applications used in semiconductor manufacturing workflows</li>
+              <li>Mentor and manage a team of 4 developers, conducting code reviews to enforce TypeScript / Angular / NestJS best practices</li>
+              <li>Achieved and maintained &gt;95% unit test code coverage using Jest across all critical application modules</li>
+              <li>Responsible for NestJS v11 API design, middleware development, guards, interceptors and MongoDB schema decisions</li>
+              <li>Deploy applications to Azure cloud using Docker, Kubernetes and Helm charts, managing containerised workloads end-to-end</li>
+              <li>Build and maintain Jenkins CI/CD pipelines to automate build, test and deployment workflows</li>
+              <li>Collaborate with cross-functional teams in Agile/Scrum sprints, delivering features on 2-week cycles</li>
+            </ul>
+            <div class="timeline-role__tags">
+              <span class="ptag">Angular 20</span>
+              <span class="ptag">NestJS v11</span>
+              <span class="ptag">MongoDB</span>
+              <span class="ptag">Azure</span>
+              <span class="ptag">Docker</span>
+              <span class="ptag">Kubernetes</span>
+              <span class="ptag">Jenkins</span>
+              <span class="ptag ptag--highlight">&gt;95% Coverage</span>
+            </div>
           </div>
-          
+
+          <!-- Role 2 -->
+          <div class="timeline-role">
+            <div class="timeline-role__header">
+              <div>
+                <h3 class="timeline-role__title">Senior Software Engineer</h3>
+                <span class="timeline-role__period">Jan 2023 – Jan 2024 · 1 yr · Chennai</span>
+              </div>
+            </div>
+            <ul class="timeline-role__bullets">
+              <li>Sole developer (team of 2) responsible for building and delivering a full-stack Angular + NestJS application end-to-end</li>
+              <li>Built and maintained NestJS backend services including RESTful API development, modules and server-side logic</li>
+              <li>Developed Angular components using Angular Material, ensuring consistent UI/UX across the application</li>
+              <li>Achieved 100% unit test code coverage using Jest and Karma/Jasmine across all application modules</li>
+              <li>Managed source control workflows via Git (Bitbucket) collaborating closely with 1 team member</li>
+            </ul>
+            <div class="timeline-role__tags">
+              <span class="ptag">Angular</span>
+              <span class="ptag">NestJS</span>
+              <span class="ptag">MongoDB</span>
+              <span class="ptag">Angular Material</span>
+              <span class="ptag ptag--highlight">100% Coverage</span>
+            </div>
+          </div>
+
+          <!-- Role 3 -->
+          <div class="timeline-role">
+            <div class="timeline-role__header">
+              <div>
+                <h3 class="timeline-role__title">Software Engineer</h3>
+                <span class="timeline-role__period">Oct 2020 – Dec 2022 · 2 yrs 3 mos · Chennai</span>
+              </div>
+            </div>
+            <ul class="timeline-role__bullets">
+              <li>Built Angular SPA modules from scratch as part of a team of 4, integrating with RESTful backend APIs</li>
+              <li>Implemented reusable Angular components with Angular Material UI library</li>
+              <li>Achieved &gt;90% unit test code coverage using Jest across all feature modules</li>
+              <li>Participated in Agile/Scrum ceremonies including sprint planning and retrospectives</li>
+              <li>Used Git for version control and feature branch management</li>
+            </ul>
+            <div class="timeline-role__tags">
+              <span class="ptag">Angular</span>
+              <span class="ptag">TypeScript</span>
+              <span class="ptag">Angular Material</span>
+              <span class="ptag">Jest</span>
+              <span class="ptag ptag--highlight">&gt;90% Coverage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---- HCL Technologies ---- -->
+        <div class="timeline-company">
+          <div class="timeline-company__header">
+            <div class="timeline-company__dot"></div>
+            <div class="timeline-company__info">
+              <h2 class="timeline-company__name">HCL Technologies</h2>
+              <span class="timeline-company__duration">Nov 2017 – Oct 2020 &nbsp;·&nbsp; 3 yrs</span>
+            </div>
+          </div>
+
+          <!-- Role -->
+          <div class="timeline-role">
+            <div class="timeline-role__header">
+              <div>
+                <h3 class="timeline-role__title">Software Engineer</h3>
+                <span class="timeline-role__period">Nov 2017 – Oct 2020 · Chennai</span>
+              </div>
+            </div>
+            <ul class="timeline-role__bullets">
+              <li>Developed and owned 4 application modules using Angular, JavaScript, TypeScript, HTML5 and CSS3</li>
+              <li>Built and maintained Angular components as part of a team of 4 developers</li>
+              <li>Integrated frontend modules with RESTful APIs and handled asynchronous data flows</li>
+              <li>Followed coding standards and participated in peer code reviews</li>
+              <li>Gained foundational experience in Agile delivery and sprint-based workflows</li>
+            </ul>
+            <div class="timeline-role__tags">
+              <span class="ptag">Angular</span>
+              <span class="ptag">JavaScript</span>
+              <span class="ptag">TypeScript</span>
+              <span class="ptag">HTML5</span>
+              <span class="ptag">CSS3</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="experience">
+      <div class="reveal" style="text-align:center">
+        <p class="section-label">Explore My</p>
+        <h1 class="title">Technical Skills</h1>
+        <div class="title-underline"></div>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers reveal">
+
+          <!-- Frontend -->
+          <div class="skill-card">
+            <div class="skill-card__header skill-card__header--frontend">
+              <span class="skill-card__icon">🖥️</span>
+              <h2 class="skill-card__title">Frontend Development</h2>
+            </div>
+            <div class="skill-pills">
+              <span class="pill pill--exp">Angular 20</span>
+              <span class="pill pill--exp">TypeScript</span>
+              <span class="pill pill--exp">Angular Material</span>
+              <span class="pill pill--exp">HTML5</span>
+              <span class="pill pill--exp">CSS3 / SCSS</span>
+              <span class="pill pill--exp">JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-card">
+            <div class="skill-card__header skill-card__header--backend">
+              <span class="skill-card__icon">⚙️</span>
+              <h2 class="skill-card__title">Backend Development</h2>
+            </div>
+            <div class="skill-pills">
+              <span class="pill pill--exp">NestJS v11</span>
+              <span class="pill pill--exp">Node.js</span>
+              <span class="pill pill--exp">MongoDB</span>
+              <span class="pill pill--exp">REST APIs</span>
+              <span class="pill pill--mid">WebSockets</span>
+              <span class="pill pill--mid">Express.js</span>
+            </div>
+          </div>
+
+          <!-- Cloud & DevOps -->
+          <div class="skill-card">
+            <div class="skill-card__header skill-card__header--cloud">
+              <span class="skill-card__icon">☁️</span>
+              <h2 class="skill-card__title">Cloud & DevOps</h2>
+            </div>
+            <div class="skill-pills">
+              <span class="pill pill--mid">Microsoft Azure</span>
+              <span class="pill pill--mid">Docker</span>
+              <span class="pill pill--mid">Kubernetes (K8s)</span>
+              <span class="pill pill--mid">Helm</span>
+              <span class="pill pill--mid">Jenkins CI/CD</span>
+            </div>
+          </div>
+
+          <!-- Testing & Tools -->
+          <div class="skill-card">
+            <div class="skill-card__header skill-card__header--testing">
+              <span class="skill-card__icon">🧪</span>
+              <h2 class="skill-card__title">Testing & Tools</h2>
+            </div>
+            <div class="skill-pills">
+              <span class="pill pill--exp">Jest</span>
+              <span class="pill pill--exp">Karma / Jasmine</span>
+              <span class="pill pill--exp">Git / Bitbucket</span>
+              <span class="pill pill--exp">Agile / Scrum</span>
+              <span class="pill pill--exp">VS Code</span>
+              <span class="pill pill--mid">OWASP Security</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="skills-legend reveal">
+          <span><span class="legend-dot legend-dot--exp"></span> Experienced</span>
+          <span><span class="legend-dot legend-dot--mid"></span> Intermediate</span>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects">
+      <div class="reveal" style="text-align:center">
+        <p class="section-label">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="title-underline"></div>
+      </div>
+      <div class="projects-grid reveal">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-card__img-wrapper">
+            <img src="./assets/project-1.png" alt="Standards Check" class="project-card__img" />
+            <div class="project-card__overlay">
+              <span class="project-card__number">01</span>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__badge">Enterprise App</span>
+              <span class="project-card__company">Applied Materials</span>
+            </div>
+            <h2 class="project-card__title">Standards Check</h2>
+            <p class="project-card__desc">
+              Enterprise compliance and standards verification application
+              for semiconductor manufacturing workflows. Ensures all
+              processes meet regulatory and internal quality standards.
+            </p>
+            <div class="project-card__tags">
+              <span class="ptag">Angular 20</span>
+              <span class="ptag">NestJS v11</span>
+              <span class="ptag">MongoDB</span>
+              <span class="ptag">Azure</span>
+              <span class="ptag ptag--highlight">100% Coverage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card project-card--featured">
+          <div class="project-card__img-wrapper">
+            <img src="./assets/project-2.png" alt="Analytics Dashboard" class="project-card__img" />
+            <div class="project-card__overlay">
+              <span class="project-card__number">02</span>
+            </div>
+            <span class="project-card__featured-badge">Featured</span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__badge">Enterprise App</span>
+              <span class="project-card__company">Applied Materials</span>
+            </div>
+            <h2 class="project-card__title">Analytics Dashboard</h2>
+            <p class="project-card__desc">
+              Real-time analytics dashboard providing data insights and
+              visualisations for operational metrics. Deployed on Azure
+              with Kubernetes and Helm.
+            </p>
+            <div class="project-card__tags">
+              <span class="ptag">Angular 20</span>
+              <span class="ptag">NestJS v11</span>
+              <span class="ptag">MongoDB</span>
+              <span class="ptag">Docker</span>
+              <span class="ptag">Kubernetes</span>
+              <span class="ptag ptag--highlight">100% Coverage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-card__img-wrapper">
+            <img src="./assets/project-3.png" alt="Patient Diagnostic" class="project-card__img" />
+            <div class="project-card__overlay">
+              <span class="project-card__number">03</span>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__badge">Enterprise App</span>
+              <span class="project-card__company">HCL Technologies</span>
+            </div>
+            <h2 class="project-card__title">Patient Diagnostic</h2>
+            <p class="project-card__desc">
+              Enterprise patient diagnostic management application with
+              a responsive Angular UI. Built with Angular, HTML5 and CSS3
+              delivering a seamless clinical user experience.
+            </p>
+            <div class="project-card__tags">
+              <span class="ptag">Angular</span>
+              <span class="ptag">HTML5</span>
+              <span class="ptag">CSS3</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
+      <div class="reveal" style="text-align:center">
+        <p class="section-label">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="title-underline"></div>
+      </div>
+      <div class="contact-info-upper-container reveal">
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
+          <img src="./assets/email.png" alt="Email" class="contact-icon" />
           <p><a href="mailto:kumarsaifinal@gmail.com">kumarsaifinal@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/contact.png"
-            alt="Mobile icon"
-            class="icon contact-icon"
-          />
-          <p><a>+91 9505057472</a></p>
+          <img src="./assets/contact.png" alt="Phone" class="contact-icon" />
+          <p><a href="tel:+919505057472">+91 9505057472</a></p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/kumara-naga-venkata-sairam-potta-b753621b0">LinkedIn</a></p>
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="contact-icon" />
+          <p>
+            <a href="https://www.linkedin.com/in/kumara-naga-venkata-sairam-potta-b753621b0" target="_blank">
+              LinkedIn Profile
+            </a>
+          </p>
         </div>
-        
+        <div class="contact-info-container">
+          <img src="./assets/github.png" alt="GitHub" class="contact-icon" />
+          <p><a href="https://github.com/SairamPotta" target="_blank">GitHub Profile</a></p>
+        </div>
       </div>
     </section>
+
+    <!-- FOOTER -->
     <footer>
       <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
-      <p>Copyright &#169; 2024 Sairam Potta. All Rights Reserved.</p>
+      <p>Copyright &#169; <span id="year"></span> Sairam Potta. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
